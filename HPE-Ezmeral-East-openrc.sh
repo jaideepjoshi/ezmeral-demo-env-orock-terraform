@@ -36,4 +36,3 @@ export OS_REGION_NAME="us-east-1"
 if [ -z "$OS_REGION_NAME" ]; then unset OS_REGION_NAME; fi
 export OS_INTERFACE=public
 export OS_IDENTITY_API_VERSION=3
-export PATH=$PATH:/Users/jaideepjoshi/Library/Python/3.9/bin
