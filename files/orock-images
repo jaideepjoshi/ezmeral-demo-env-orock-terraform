@@ -1,0 +1,35 @@
++--------------------------------------+-----------------------------------------------+--------+
+| ID                                   | Name                                          | Status |
++--------------------------------------+-----------------------------------------------+--------+
+| d0a9b82e-ccd6-41e2-8dbc-63021f7d6ed3 | CentOS 7 (build 1907)                         | active |
+| 6b2024f7-29d8-446b-bdad-ca78ca8573a5 | CentOS 7 (build 2009)                         | active |
+| d93851a1-8fa2-45b2-a079-3f1754fa528c | CentOS 8.3                                    | active |
+| 65c43a8a-7487-4eca-8917-3499970fbed9 | CentOS 8.4                                    | active |
+| cd8f2bd0-21d8-45ab-90c6-78987365fddb | Cirros-0.4.0                                  | active |
+| c053bc96-b478-4b96-94e8-8c9048c99a77 | Debian 10 (Buster)                            | active |
+| ffb47b1c-3a94-4c4a-bdb7-65a49f3bfcb4 | Fedora 31                                     | active |
+| 136ab8e8-1928-4172-aaa1-838d8150533d | Fedora 33                                     | active |
+| af300553-d0b8-47c1-a521-22d28288c4f4 | Fedora 34                                     | active |
+| 4fc2cabb-1a4e-4e16-91e7-e0d7715b0378 | Microsoft Windows 10 Pro                      | active |
+| b7fca323-752c-4b27-8644-186f99db8d7e | Microsoft Windows Server 2019 Datacenter      | active |
+| 1a00fafd-3cbe-46dd-b9f5-bfab1fdeb042 | Microsoft Windows Server 2019 Datacenter Core | active |
+| a7b1345a-99a5-44a3-83c6-785a4e063240 | Microsoft Windows Server 2019 Standard        | active |
+| 4b0ce2af-bd53-47fb-a23c-162e13e389f9 | Microsoft Windows Server 2019 Standard Core   | active |
+| 5082b295-c17a-4b72-bb0e-6edc720da536 | Oracle Linux 7.6                              | active |
+| 73e99e6c-1b56-4c2f-b53b-e162454752ac | Red Hat Enterprise Linux 7.6 (BYOL)           | active |
+| 8792e102-fed7-42dc-b160-1b7ca6bb71ef | Red Hat Enterprise Linux 7.6 (FIPS)           | active |
+| 4e428204-a8c4-46fe-9c30-b371d182ef3b | Red Hat Enterprise Linux 7.7 (BYOL)           | active |
+| ca0e2fb2-60f1-4c2d-813f-3cdd6182d8a6 | Red Hat Enterprise Linux 7.9 (BYOL)           | active |
+| 3881bd89-b9d7-416e-ad42-c882c6cd0f52 | Red Hat Enterprise Linux 8.1 (BYOL)           | active |
+| 17d958fd-7203-4d65-ab92-6245f6aa6632 | Red Hat Enterprise Linux 8.2 (BYOL)           | active |
+| a26adb55-58aa-4aa8-b487-ab00c20874bc | Red Hat Enterprise Linux 8.3 (BYOL)           | active |
+| 1eda6da8-c8e5-4ede-a488-23326ae0f478 | Red Hat Enterprise Linux 8.4 (BYOL)           | active |
+| ce5911f4-4272-4f1e-a180-5ef925830021 | SambaNova DataScale (RHEL 8.2)                | active |
+| 46692c4f-ab05-4400-a31a-49f864f27985 | SambaNova DataScale (Ubuntu 18.04)            | active |
+| e0dce180-7c64-4a6b-b010-a1f03ee986fc | Ubuntu Server 16.04 LTS (Xenial Xerus)        | active |
+| 3f0a2723-a58f-4205-881c-3acbe08a3974 | Ubuntu Server 18.04 LTS (Bionic Beaver)       | active |
+| 22e6b11c-0a51-4db4-b7d8-29ab03947788 | Ubuntu Server 20.04 LTS (Focal Fossa)         | active |
+| d9c6b217-c178-439c-823a-d5e2c958f46d | Ubuntu Server 21.04 (Hirsute Hippo)           | active |
+| 24efe7fe-46fb-4094-9772-9e0b4b1310a3 | Windows Server 2019 Standard (ISO+Virtio)     | active |
+| d1688032-9cd8-499d-b458-a7d6c2a7c59d | openSUSE Leap 15.2                            | active |
++--------------------------------------+-----------------------------------------------+--------+

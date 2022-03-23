@@ -1,0 +1,55 @@
+#cloud-config
+groups:
+  - docker
+
+users:
+- default
+- name: hpe
+  lock_passwd: true
+  shell: /bin/bash
+  ssh-authorized-keys:
+    - ${ssh_public_key}
+  groups: [docker]
+  sudo: ["ALL=(ALL) NOPASSWD:ALL"]
+
+
+packages:
+  - apt-transport-https
+  - ca-certificates
+  - curl
+  - gnupg-agent
+  - software-properties-common
+
+write_files:
+- content: |-
+    [Unit]
+    Description=Ezmeral as a service
+    Requires=docker.service
+    After=docker.service
+
+    [Service]
+    Restart=on-failure
+    RestartSec=10
+    ExecStart=/usr/bin/docker run 
+    ExecStop=-/usr/bin/docker stop -t 2 %p
+
+    [Install]
+    WantedBy=multi-user.target
+  owner: root:root
+  path: /etc/systemd/system/ezmeral.service
+  permissions: '0644'
+
+
+runcmd:
+  - sudo sleep 120
+  - sudo yum update -y
+  - sudo yum install -y -q wget git
+  - yum install -y docker-ce docker-ce-cli containerd.io
+  - systemctl daemon-reload
+  - set -ex
+  - sudo yum install -y -q docker openldap-clients
+  - sudo systemctl enable docker
+  - sudo systemctl start docker
+  - mkdir /tmp/jaideep
+
+final_message: "The system is finally up, after $UPTIME seconds"

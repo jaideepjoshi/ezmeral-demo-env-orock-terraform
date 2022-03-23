@@ -1,0 +1,87 @@
+#CHANGE FOR YOUR DEPLOYMENT - please fill these variables or use TF_VARS_ prefix to be exported env variables
+# 
+openstack_username = "xxxx.xxxxxxx"
+openstack_password = "xxxxxxxxxxxx" 
+openstack_domain   = "HPE_Ezmeral"
+openstack_project  = "733021daee244346a5b662f36b6c90e4"
+openstack_auth_url = "https://api.us-east-1.orocktech.com:13000/v3/"
+
+#CHANGE FOR YOUR DEPLOYMENT -  All Resources for this demo env will be prefixed to avoid clashing names
+prefix = "xxx-ecp"
+
+#CHANGE FOR YOUR DEPLOYMENT - Choose a unique subnet CIDR for your deployment
+# Also change this in variables.tf
+subnet_cidr = "192.168.xxx.0/24"
+
+private_key = "./generated/controller.prv_key"
+
+#Ubuntu 18 Image ID for VPN Server - East
+demo-vpn-image-id = "3f0a2723-a58f-4205-881c-3acbe08a3974"
+#Ubuntu 18 Image ID for VPN Server - West
+#demo-vpn-image-id = "120b5520-a2d8-41fd-8a12-f4cd96ff65e3"
+
+# Centos 7 Image ID for ADserver, DNS Server, Runtime Servers and K8s - East
+hpe_node_image_id = "6b2024f7-29d8-446b-bdad-ca78ca8573a5"
+# Centos 7 Image ID for ADserver, DNS Server, Runtime Servers and K8s - West
+#hpe_node_image_id = "8562ee45-299f-401d-8f30-6b3f53d76784"
+
+# Centos 8.4 Image ID for External DF
+#externaldf-image-id = "65c43a8a-7487-4eca-8917-3499970fbed9"
+
+# Ubuntu 20.04 Image ID for External DF - East
+externaldf-image-id = "22e6b11c-0a51-4db4-b7d8-29ab03947788"
+# Ubuntu 20.04 Image ID for External DF - West
+#externaldf-image-id = "d041da01-901e-4f0d-8048-e4cd5454c892"
+# Ubuntu 20.04 Image ID for External DF - West - Ezmeral image
+#externaldf-image-id = "2da2f601-3a89-4578-a957-6fab07daacf8"
+
+# Centos for K3s nodes Image ID
+k3s-node-image-id = "65c43a8a-7487-4eca-8917-3499970fbed9"
+
+# Count of ecp controllers (Only use 1) 
+count-demo-controllers = "1"
+
+# Count of ecp gateways (Only use 1) 
+count-demo-gateways="1"
+
+#Vanilla K8s Cluster. Not working yet
+count-k8smasters = "0"
+count-k8sworkers = "0"
+
+#DF and ML-Ops K8s Cluster
+count-k8sdfcomputemasters = "3"
+count-k8sdfworkers = "3"
+count-k8scomputeworkers = "3"
+
+#of Nodesin External DF Cluster (0 or 3)
+count-externaldf-hosts = "1"                    
+
+#Number of K3s hosts
+count-k3s-hosts = "0"
+
+# Instances' flavor size
+demo-vpn-flavor = "t1.small"
+demo-adserver-flavor = "t1.small"
+demo-dnsserver-flavor = "t1.small"
+demo-controller-flavor = "m1.xlarge"
+demo-gateway-flavor = "m1.xlarge"
+demo-k8sdfcomputemaster-flavor = "m1.xlarge"
+demo-k8sdfworker-flavor = "c1.8xlarge"
+demo-k8scomputeworker-flavor = "c1.8xlarge"
+demo-externaldf-flavor = "m1.4xlarge"
+demo-k8smaster-flavor = "t1.xlarge"
+demo-k8sworker-flavor = "t1.xlarge"
+demo-rdpserver-flavor = "t1.xlarge"
+demo-k3s-flavor = "t1.xlarge"
+
+# Name of floating IP pool
+ip_pool_name = "external-floating-ips"
+# ID of External Network
+external_network = "external-floating-ips"
+
+# Admin password to access hpe
+# hpe_admin_password = "admin123"
+
+# Name of custom cluster that will be created
+# cluster_name = "demo"
+
